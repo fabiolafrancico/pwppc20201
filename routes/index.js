@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' , author: 'Fabiola Francisco'});
+  res.render('index', { title: 'Express' , author: 'Fabiola Francisco', appName:'WebApp',
+ company: 'Awxome Software' });
 });
  
 router.get('/greeting', function(req, res, next) {
